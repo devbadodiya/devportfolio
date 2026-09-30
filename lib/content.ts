@@ -759,9 +759,9 @@ export const uses: UseGroup[] = [
     group: "Watch & listen",
     items: [
       {
-        name: "Apple Music",
+        name: "Spotify",
         note: "Background for deep work and late edits.",
-        href: "https://music.apple.com",
+        href: "https://open.spotify.com",
       },
       {
         name: "YouTube",
@@ -775,11 +775,11 @@ export const uses: UseGroup[] = [
 export const listening = {
   updated: "30 Sep 2026",
   title: "Daayre",
-  artist: "Pritam & Arijit Singh",
+  artist: "Pritam, Arijit Singh",
   album: "Dilwale",
   note: "On when the week needs air.",
-  href: "https://music.apple.com/in/song/daayre/1057567679",
-  embed: "https://embed.music.apple.com/in/song/daayre/1057567679",
+  href: "https://open.spotify.com/track/0OQzbOu5JGo2LgtwJI04zO",
+  embed: "https://open.spotify.com/embed/track/0OQzbOu5JGo2LgtwJI04zO",
 };
 
 export const pinnedGuestbook = {

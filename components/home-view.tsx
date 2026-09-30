@@ -2,6 +2,7 @@
 
 import { essays, profile } from "@/lib/content";
 import { WorkPreview } from "./work-preview";
+import { NowPlayingBlock } from "./now-playing";
 import { TextLink, TransitionLink } from "./links";
 
 export function HomeView() {
@@ -33,6 +34,9 @@ export function HomeView() {
 
       <p className="label">Work</p>
       <WorkPreview />
+
+      <p className="label">Listening</p>
+      <NowPlayingBlock showHeading={false} />
 
       <p className="label">Writing</p>
       {essays.map((essay) => (

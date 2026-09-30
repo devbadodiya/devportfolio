@@ -55,7 +55,7 @@ export default function ColophonPage() {
       <div className="prose">
         <h2>This site, specifically</h2>
         <p>
-          The front page is a bio, the work, and the notes. The rest — now, someday, skills, guestbook, visits, a small on-site guide — sits in the footer so the top stays quiet. Visits and guestbook notes live in a SQLite database (libSQL). Locally that is a file under data/; in production you can point it at a free Turso database. No IP address is stored with the public records.
+          The front page is a bio, the work, and the notes. The rest — now, someday, skills, guestbook, visits, a small on-site guide — sits in the footer so the top stays quiet. Visits and guestbook notes live in a SQLite database (libSQL). Locally that is a file under data/; in production you can point it at a free Turso database. No IP address is stored with the public records. Listening pulls live from Spotify when credentials are set.
         </p>
         <h2>Likes</h2>
       </div>

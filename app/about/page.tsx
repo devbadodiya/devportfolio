@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { socialMeta } from "@/lib/og";
 import { PageHeader } from "@/components/page-header";
 import { TextLink } from "@/components/links";
-import { about, listening, profile, timeline, uses } from "@/lib/content";
+import { NowPlayingBlock } from "@/components/now-playing";
+import { about, profile, timeline, uses } from "@/lib/content";
 
 export const metadata: Metadata = socialMeta({
   title: "About",
@@ -51,30 +52,7 @@ export default function AboutPage() {
           ))}
         </section>
       ))}
-      <section className="craft-block listening-block">
-        <h2>Song of the week</h2>
-        <p className="quiet">Updated {listening.updated}. Playing on Apple Music.</p>
-        <a className="listening-card" href={listening.href} target="_blank" rel="noopener noreferrer">
-          <div>
-            <strong>{listening.title}</strong>
-            <span className="listening-meta">
-              {listening.artist}
-              {listening.album ? ` · ${listening.album}` : ""}
-            </span>
-            <span className="listening-note">{listening.note}</span>
-          </div>
-          <span className="listening-open">Apple Music ↗</span>
-        </a>
-        {listening.embed ? (
-          <iframe
-            className="listening-embed"
-            title={`${listening.title} on Apple Music`}
-            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-            src={listening.embed}
-          />
-        ) : null}
-      </section>
+      <NowPlayingBlock />
       <div className="section-head">
         <h2>Timeline</h2>
       </div>
