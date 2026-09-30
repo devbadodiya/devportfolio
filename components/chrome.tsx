@@ -37,6 +37,7 @@ const more = [
   { href: "/someday", title: "Someday" },
   { href: "/writing", title: "Writing" },
   { href: "/skills", title: "Skills" },
+  { href: "/decisions", title: "Decisions" },
   { href: "/guestbook", title: "Guestbook" },
   { href: "/visits", title: "Visits" },
   { href: "/studio", title: "Desk" },

@@ -25,6 +25,7 @@ export const pageLabels: Record<string, string> = {
   "/someday": "Someday",
   "/work": "Work",
   "/skills": "Skills",
+  "/decisions": "Decisions",
   "/writing": "Writing",
   "/favorites": "Favorites",
   "/guestbook": "Guestbook",

@@ -808,6 +808,62 @@ button, input { font: inherit; color: inherit; }
   color: var(--muted);
 }
 
+.decision-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.decision-list > li {
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.decision-list h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.decision-list p {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+}
+
+.decision-list p:last-child {
+  margin-bottom: 0;
+}
+
+.decision-log > li {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.75rem 1rem;
+}
+
+.decision-log .when {
+  color: var(--faint);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.decision-label {
+  display: inline-block;
+  min-width: 2.6rem;
+  margin-right: 0.35rem;
+  color: var(--faint);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .decision-log > li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
 @media (max-width: 640px) {
   .swatches, .stack-row, .like-row, .principle, .skill-row { grid-template-columns: 1fr; }
   .theme-btn { margin-left: 0; }

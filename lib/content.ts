@@ -25,6 +25,7 @@ export const directory: { more: DirLink[]; elsewhere: DirLink[]; connect: DirLin
   elsewhere: [
     { href: "/studio", title: "Desk", hint: "Ask this site" },
     { href: "/skills", title: "Skills", hint: "Craft and principles" },
+    { href: "/decisions", title: "Decisions", hint: "Anti-roadmap and calls" },
     { href: "/favorites", title: "Favorites", hint: "Things I keep" },
     { href: "/writing", title: "Writing", hint: "Notes" },
     { href: "/photos", title: "Photos", hint: "Frames from the work" },
@@ -52,6 +53,7 @@ export const moreNav = [
   { href: "/now", title: "Now" },
   { href: "/someday", title: "Someday" },
   { href: "/skills", title: "Skills" },
+  { href: "/decisions", title: "Decisions" },
   { href: "/photos", title: "Photos" },
   { href: "/guestbook", title: "Guestbook" },
   { href: "/visits", title: "Visits" },
@@ -779,6 +781,79 @@ export const listening = {
   href: "https://music.apple.com/in/song/daayre/1057567679",
   embed: "https://embed.music.apple.com/in/song/daayre/1057567679",
 };
+
+export const pinnedGuestbook = {
+  id: "",
+  name: "Visitor",
+  message: "Leave a short note in the guestbook if you want — no account needed.",
+};
+
+export const antiRoadmap = {
+  updated: "30 Sep 2026",
+  note: "A short list of things I will not pretend to ship. Saying no keeps Cosverse honest.",
+  items: [
+    {
+      title: "A model zoo with no memory",
+      body: "Five logos on a switcher is a demo. If the second session forgets the first, it is not a product.",
+    },
+    {
+      title: "Vanity metrics on this site",
+      body: "No invented user counts, no trophy accuracy scores. If a number was not published with the work, it does not appear here.",
+    },
+    {
+      title: "Surveillance dressed as craft",
+      body: "The helmet study stays an archive problem. I will not turn computer vision into a product that watches people by default.",
+    },
+    {
+      title: "A louder bio instead of a calmer product",
+      body: "Founding member is a calendar. I would rather ship the next confusing flow than write a bigger title.",
+    },
+    {
+      title: "Three bills for one thought",
+      body: "If someone needs several models for one task, the product should not make them keep three tabs and three invoices in their head.",
+    },
+  ],
+};
+
+export type Decision = {
+  when: string;
+  title: string;
+  call: string;
+  redo: string;
+};
+
+export const decisions: Decision[] = [
+  {
+    when: "2025",
+    title: "One room, many models",
+    call: "Bet Cosverse on a single chat and bill instead of another model wrapper.",
+    redo: "I would still make the bet. I would write the empty-state and the second-session story before the marketing sentence.",
+  },
+  {
+    when: "2025",
+    title: "Product email as product",
+    call: "Move transactional mail onto a usage-based sender and treat the copy as part of the interface.",
+    redo: "Same call. Sooner. Mail that lies about the product is worse than a missing feature.",
+  },
+  {
+    when: "2022",
+    title: "E-Cell technical seat",
+    call: "Take the unglamorous coordination work so students could try companies early.",
+    redo: "I would still take it. I would keep a public log of what actually shipped each month.",
+  },
+  {
+    when: "Archive",
+    title: "Ship the plant tool for a farmer",
+    call: "Build AI Varaksha around a photo and a person in a field, not a notebook score.",
+    redo: "Same instinct. I would put the failure case on the first screen, not in a readme.",
+  },
+  {
+    when: "Ongoing",
+    title: "Keep this site narrow",
+    call: "One column, one content file, no CMS. Edit a sentence without a hunt.",
+    redo: "I would still refuse the dashboard. I would add persistence earlier for visits and the guestbook.",
+  },
+];
 
 export function getProject(slug: string) {
   return projects.find((project) => project.slug === slug);

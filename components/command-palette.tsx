@@ -26,6 +26,7 @@ const pages: PaletteItem[] = [
   { id: "now", title: "Now", href: "/now", hint: "This month", keywords: "current" },
   { id: "someday", title: "Someday", href: "/someday", hint: "Longer goals", keywords: "future" },
   { id: "skills", title: "Skills", href: "/skills", hint: "Craft", keywords: "principles" },
+  { id: "decisions", title: "Decisions", href: "/decisions", hint: "Anti-roadmap", keywords: "log redo refuse" },
   { id: "visits", title: "Visits", href: "/visits", hint: "Live map", keywords: "analytics traffic" },
   { id: "colophon", title: "Colophon", href: "/colophon", hint: "Stack and type", keywords: "credits fonts" },
 ];
